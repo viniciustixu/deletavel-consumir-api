@@ -10,9 +10,7 @@
     <p id="api-response"></p>
 
     <script>
-      fetch(
-        'https://deletavel-g6jzmty6e-vinicius-projects-01df553b.vercel.app/',
-      )
+      fetch('http://localhost:3000/')
         .then((response) => response.text()) // Transforma a resposta em texto
         .then((data) => {
           document.getElementById('api-response').textContent = data; // Exibe a resposta no parágrafo
